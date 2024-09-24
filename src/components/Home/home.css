@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.containerHome{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.contact{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.light{
+    position: absolute;
+    top: 20px;
+    left: 18%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.light img{
+    width: 40rem;
+    opacity: 0.19;
+}
+
+.Home{
+    background-color: #121212;
+   color: aliceblue;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.home{
+   background-color: #121212;
+}
+
+.head{
+    margin: 31px;
+    line-height: 3rem;
+}
+.head p{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.head span{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.smDesc{
+    margin: 4rem 3rem 3rem 2rem;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+    background: linear-gradient(45deg, #00E733, #00E0FF);
+    animation: rotate 5s linear infinite;
+    transition: 0.3s;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, #00000011);
+    box-shadow: 0px 0px 12px #0002;  
+}
+
+.contact{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+}
+.contact div{
+    margin: 10px;
+}
+
+
+  @keyframes rotate {
+    0%{
+      filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(180deg);
+    }
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  }
+
+
+   
+ @media only screen and (max-width: 979px) {
+     .light{
+        top: 12rem;
+        left: 0px;
+     }
+     .light img{
+         width: 22rem;
+         opacity: 0.19;
+     }
+     .smDesc{
+        margin: 1rem 3rem 3rem 3rem;
+        font-size: 1rem;
+     }
+     .contact{
+        bottom: -7rem;
+     }
+     .head{
+        margin: -6rem 2rem 4rem 2rem;
+     }
+}

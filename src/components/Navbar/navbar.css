@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+.NavWhole{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    align-items: center;
+    background-color: #121212;
+}
+.leftNav{
+    max-width: 50%;
+    font-weight: 900;
+    margin: auto;
+    font-size: 30px;
+}
+
+.rightNav{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    align-items: center;
+    list-style-type: none;
+    max-width: 50%;
+    margin: auto;
+    font-size: 25px ;
+    line-height: 47px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-item{
+    margin: 0px 22px 0px 22px;
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 13px;
+    color: white;
+    transition: 0.4s;
+}
+a:hover{
+    background-color: crimson;
+    color: whitesmoke;
+}
+.menu{
+    font-size: 52px;
+    display: none;
+}
+
+.menu-burger{
+    transition: 3s;
+}
+
+@media only screen and (max-width: 979px) {
+    .NavWhole{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .rightNav{
+        color: white;
+    display: none;
+    justify-content: none;
+    text-decoration: none;
+    align-items: cenone;
+    list-style-type: none;
+    max-width: none;
+    margin: none;
+    font-size: none ;
+    line-height: none;
+    }
+    
+.menu-burger{
+    color: white;
+    font-size: 25px;
+    z-index: 2;
+    line-height: 52px;
+    position: absolute;
+    list-style-type: none;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    background: crimson;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+}
+    .menu{
+        display: block;
+        margin: 1rem 1rem 1rem 2rem;
+        z-index: 3;
+    }
+    .leftNav{
+        max-width: none;
+        margin: 1rem 1rem 1rem 2rem;
+    }
+}
